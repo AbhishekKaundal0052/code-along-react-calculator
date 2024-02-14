@@ -158,7 +158,7 @@ function App() {
         <div>{formatOperand(currentOperand)}</div>
       </div>
       <button
-        className="span-two"
+        className="result"
         onClick={() => dispatch({ type: ACTIONS.CLEAR })}
       >
         AC
@@ -182,7 +182,7 @@ function App() {
       <Buttons digit="." dispatch={dispatch} />
       <Buttons digit="0" dispatch={dispatch} />
       <button
-        className="span-two"
+        className="result"
         onClick={() => dispatch({ type: ACTIONS.EVALUATE })}
       >
         =
